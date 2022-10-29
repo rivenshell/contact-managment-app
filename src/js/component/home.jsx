@@ -1,13 +1,15 @@
 import React from "react";
-
+import "../component/style.css"
 //include images into your bundle
 import rigoImage from "../../img/rigo-baby.jpg";
+import {NavBar} from 'react-bootsrrap'
 
 //create your first component
 const Home = () => {
 	return (
+		<NavBar className ='top-nav'/>
 		<div className="text-center">
-			<h1 className="text-center mt-5">Hello Rigo!</h1>
+			<h1 className="text-center mt-5">Contact Sheet</h1>
 			<p>
 				<img src={rigoImage} />
 			</p>
@@ -22,5 +24,7 @@ const Home = () => {
 		</div>
 	);
 };
+
+
 
 export default Home;
